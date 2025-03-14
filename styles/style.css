@@ -13,12 +13,13 @@ a {
   padding: 92px 50px 96px 50px;
   font-weight: 400;
   font-size: 18px;
-  line-height: 110%;
+  line-height: 100%;
 }
 
 .header__links-list {
   display: flex;
-  gap: 31.48px;
+  gap: 32px;
+  
 }
 
 .header__links-list-item {
@@ -31,8 +32,8 @@ a {
 
 .header__logo {
   display: block;
-  width: 148px;
-  height: 105px;
+  width: 129.11px;
+  height: 104.65px;
 }
 
 .address {
@@ -87,7 +88,6 @@ a {
 
 .cover__description {
   display: flex;
-  padding: 0 50px 50px 0;
 }
 
 .cover__description-text {
@@ -118,7 +118,7 @@ a {
 }
 
 .lots__heading {
-  padding: 27px 40px;
+  padding: 0 40px 27px;
   color: #000;
   font-weight: 700;
   font-size: 40px;
