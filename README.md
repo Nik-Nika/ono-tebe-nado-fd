@@ -1,1 +1,1 @@
-https://github.com/Nik-Nika/ono-tebe-nado-fd
+https://github.com/Nik-Nika/ono-tebe-nado
