@@ -10,15 +10,11 @@ a {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 75px 96px 50px;
-  font-family: 'Raleway';
-  font-style: normal;
+  padding: 92px 50px 96px 50px;
+  color: #000;
   font-weight: 400;
   font-size: 18px;
   line-height: 24.3px;
-  color: #000;
-
-
 }
 
 .header__links-list {
@@ -47,25 +43,28 @@ a {
 
 .header__address {
   justify-self: end;
+  padding: 0 35px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .cover {
   position: relative;
-  z-index: -2;
+  z-index: 0;
   min-height: 757px;
   background: url(../images/cover.jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.overlay {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
 .cover__title {
+  position: relative;
+  z-index: 2;
   padding: 165px 50px 106px 50px;
   color: #fff;
   font-weight: 700;
@@ -94,6 +93,8 @@ a {
 }
 
 .cover__description {
+  position: relative;
+  z-index: 2;
   display: flex;
 }
 
@@ -122,7 +123,7 @@ a {
 }
 
 .lots {
-  margin: 180px 24px 120px;
+  margin: 180px 24px 0;
 }
 
 .lots__heading {
@@ -157,6 +158,7 @@ a {
 }
 
 .card__title {
+  z-index: 2;
   font-weight: 700;
   font-size: 22px;
   line-height: 120%;
@@ -165,6 +167,7 @@ a {
 }
 
 .card__text {
+  z-index: 2;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
@@ -183,20 +186,23 @@ a {
 }
 
 .card-link {
-  z-index: -2;
   height: 100%;
   background-position: center;
   background-size: cover;
 }
 
 .lots__look-more-link {
-  margin: 0 40px;
+  display: inline-block;
+  margin: 30px 0 0 40px;
   border-bottom: 1px #000 solid;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
 }
 
 .about {
   display: flex;
-  margin: 0 24px 180px;
+  margin: 120px 24px 180px;
   padding: 35px 0 0 47px;
 }
 
@@ -226,6 +232,7 @@ a {
 }
 
 .about__title {
+  padding: 0 0 76px;
   color: #000000;
   font-weight: 700;
   font-size: 40px;
@@ -235,7 +242,7 @@ a {
 
 .about__paragraph {
   display: block;
-  padding: 100px 0 24px 0;
+  padding: 24px 0 0;
 }
 
 .footer {
@@ -246,6 +253,13 @@ a {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+}
+
+.footer__menu {
+  color: #000;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .footer__menu-list-item {
